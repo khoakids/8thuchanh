@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="traloi">What is the “official” name of JavaScript?</label>
+        <input type="text" id="traloi">
+        <button type="button" onclick="giatri()">submit</button>
+        <div id="result"></div>
+    </form>
+    <script>
+        function giatri() {
+            var text = document.getElementById('traloi').value;
+
+            if (text === 'ECMAScript') {
+                document.getElementById('result').innerHTML = 'true';
+            } else {
+                document.getElementById('result').innerHTML = 'false';
+            }
+
+        }
+    </script>
+</body>
+</html>
