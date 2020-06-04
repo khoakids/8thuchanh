@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nam">nhập năm</label>
+        <input type="text" id="nam">
+        <button type="button" onclick="namnhuan()">submit</button>
+        <div id="result"></div>
+    </form>
+    <script>
+        function namnhuan() {
+        var year = +document.getElementById('nam').value;
+        if (year % 4 == 0) {
+            if ( year % 100 != 0) {
+                document.getElementById('result').innerHTML = 'Năm nhuận';
+            } else if ( year % 400 != 0) {
+                document.getElementById('result').innerHTML = 'Không phải năm nhuận';
+            } else {
+                document.getElementById('result').innerHTML = 'Năm nhuận';            }
+        } else {
+            document.getElementById('result').innerHTML = 'Không phải năm nhuận';
+        }
+    }
+    </script>
+</body>
+</html>
