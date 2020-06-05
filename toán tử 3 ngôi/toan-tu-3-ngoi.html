@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="numbera">Nhập số a</label>
+    <input type="text" id="numbera">
+    <label for="numberb">Nhập số b</label>
+    <input type="text" id="numberb">
+    <button type="button" onclick="cong()">Nhập</button>
+    <script>
+        function cong() {
+        let a = +document.getElementById('numbera').value;
+        let b = +document.getElementById('numberb').value;
+        var c = (a + b) < 4 ? 'below' : 'over';
+        document.write(c);
+    }
+
+
+    </script>
+</body>
+</html>
